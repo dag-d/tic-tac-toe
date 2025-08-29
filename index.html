@@ -8,13 +8,14 @@
 </head>
 <body>
   <main>
-    <section id="mode-select">
-      <button id="singlePlayerBtn">Single Player</button>
-      <button id="twoPlayerBtn">Two Player</button>
+    <h1>Tic Tac Toe</h1>
+    <section class="scoreboard">
+        <div>player X:<span id=scoreX>0</span></div>
+        <div>player O:<span id=scoreO>0</span></div>
+        <div>Draws: <span id="draws">0</span></div>
+        <div>Games: <span id="games">0</span></div>
     </section>
-
-    <section id="game-board" class="hidden">
-      <div class="grid">
+      <section class="board">
         <!-- 9 cells -->
         <div class="cell" data-index="0"></div>
         <div class="cell" data-index="1"></div>
@@ -25,9 +26,12 @@
         <div class="cell" data-index="6"></div>
         <div class="cell" data-index="7"></div>
         <div class="cell" data-index="8"></div>
-      </div>
+     </section>
+      
+     <section class="controls">
       <button id="restartBtn">Restart</button>
-    </section>
+      <button id="resetBtn">Reset Scores</button>
+     </section>
   </main>
   <script src="script.js"></script>
 </body>
